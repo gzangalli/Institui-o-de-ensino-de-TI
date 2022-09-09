@@ -1,0 +1,51 @@
+O Cenário:
+
+Uma instituição de ensino de TI distribui seus alunos em turmas de no máximo 30 (trinta) pessoas. Cada turma possui um código, um professor e um nome da disciplina ministrada. Tanto professores quanto alunos são identificados por códigos, e possuem informações de nome e e-mail registrados no sistema. Também é registrado o local de formação dos professores, e o curso no qual os alunos estão matrículados.
+
+Os cursos oferecidos são os seguintes:
+
+Código 1 : Ciência de Computação
+
+Código 2 : Sistemas de Informação
+
+Código 3 : Engenharia de Computação
+
+Código 4 : Análise e Desenvolvimento de Sistemas
+
+Em cada disciplina os alunos são avaliadas através de 3 (três) notas, com valores entre 0 (zero) e 10 (dez). A nota final do aluno na disciplina é a média aritmética simples das 3 notas, com nota mínima para aprovação igual a 7 (sete). A frequência dos alunos não é levada em conta e as disciplinas não oferecem oportunidade de recuperar notas. 
+
+O problema:
+
+A instituição precisa de um software que permita o registro dos dados de diversas turmas e de seus alunos. O software deve também fornecer alguns dados estatísticos sobre as turmas. Para tanto, ela deseja que o software apresente o seguinte menu de usuário:
+
+------------------------------------------------------------
+
+Instituição TI
+
+------------------------------------------------------------
+
+Escolha uma das opções a seguir:
+
+1) Listar todas as turmas
+
+2) Informar dados de uma turma
+
+3) Consultar os dados de uma turma
+
+4) Consultar estatísticas gerais
+
+5) Sair do sistema
+
+------------------------------------------------------------
+
+Esse menu deverá ser apresentado dentro de um loop, que só se encerra quando o usuário escolher a opção 5 (cinco).
+
+Ao escolher a opção 1 (um), o sistema deverá informar, para cada turma, seu código, nome da disciplina, nome do professor e a quantidade de alunos matriculados na mesma. O sistema fica esperando o usuário pressionar uma tecla qualquer para voltar ao menu principal.
+
+Ao escolher a opção 2 (dois), o sistema deverá solicitar ao usuário que informe os dados da turma: Seu código, nome da disciplina, nome do professor. Em seguida solicite os dados dos alunos : Seu código, nome, curso, e-mail e suas 3 (três) notas. A solicitação dos dados de alunos deverá ser realizada dentro de um loop também, sendo que ao final da solicitação dos dados de um aluno deverá ser perguntado ao usuário se ele quer ou não (“S”-Sim, “N”-Não) continuar informando dados de alunos. Ao informar “N”, o sistema deverá retornar ao menu principal.
+
+Ao escolher a opção 3 (três), o sistema deverá solicitar ao usuário que informe o código da turma e então apresentará os dados dela, listando seu código, nome da disciplina e nome do professor. Em seguida os nomes de todos os alunos, com suas três notas, sua nota final, calculada através de média aritmética e sua situação (Aprovado (média >=7) ou Reprovado (média <7)). O sistema fica esperando o usuário pressionar uma tecla qualquer para voltar ao menu principal.
+
+Ao escolher a opção 4 (quatro), o sistema deverá informar, para todas as turmas, seu código, nome da disciplina, nome do professor,a quantidade de alunos matriculados na mesma, o número de alunos aprovados e o percentual de alunos aprovados na mesma. Por fim o sistema deve apresentar o número total de matrículas na instituição e o percentual total de aprovação, entre todas as turmas. O sistema fica esperando o usuário pressionar uma tecla qualquer para voltar ao menu principal.
+
+A opção 5 (cinco) pergunta ao usuário se ele “Deseja realmente sair? S-Sim/N-Não”, se ele responder que não, volta ao menu principal, se responder sim, encerra o programa.
